@@ -1,0 +1,8 @@
+.form__label {
+    font-size: 20px;
+}
+
+.form__span {
+    display: inline-block;
+    width: 150px;
+}

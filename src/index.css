@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(https://wallpapers.com/images/high/4k-bitcoin-p5r0i6d562n8bep4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  font-family: 'Chakra Petch', sans-serif;
 }
