@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Curr-calc-react/static/css/main.e8f56580.css",
-    "main.js": "/Curr-calc-react/static/js/main.b957dbec.js",
+    "main.css": "/Curr-calc-react/static/css/main.8a9e06df.css",
+    "main.js": "/Curr-calc-react/static/js/main.1ececf24.js",
     "static/js/787.0ba8fc16.chunk.js": "/Curr-calc-react/static/js/787.0ba8fc16.chunk.js",
     "index.html": "/Curr-calc-react/index.html",
-    "main.e8f56580.css.map": "/Curr-calc-react/static/css/main.e8f56580.css.map",
-    "main.b957dbec.js.map": "/Curr-calc-react/static/js/main.b957dbec.js.map",
+    "main.8a9e06df.css.map": "/Curr-calc-react/static/css/main.8a9e06df.css.map",
+    "main.1ececf24.js.map": "/Curr-calc-react/static/js/main.1ececf24.js.map",
     "787.0ba8fc16.chunk.js.map": "/Curr-calc-react/static/js/787.0ba8fc16.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8f56580.css",
-    "static/js/main.b957dbec.js"
+    "static/css/main.8a9e06df.css",
+    "static/js/main.1ececf24.js"
   ]
 }
