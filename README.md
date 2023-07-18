@@ -6,6 +6,8 @@ The currency calculator allows you to convert PLN currency into:
 - GBP
 - CHF
 
+![screen](https://raw.githubusercontent.com/R0galKJ/Curr-calc-react/main/public/currCalc.png)
+
 ## Demo
 
 [Curr calc](https://r0galkj.github.io/Curr-calc-react/)
