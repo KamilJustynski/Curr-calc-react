@@ -20,7 +20,7 @@ The currency calculator allows you to convert PLN currency into:
 - BEM
 - React
 
-![icon](https://cdn-icons-png.flaticon.com/128/174/174854.png) ![icon](https://cdn-icons-png.flaticon.com/128/732/732190.png) ![icon](https://t3.ftcdn.net/jpg/02/49/94/34/240_F_249943490_P7KwlZJJuxfS3m85xPG6bkuAmFUhdiZs.jpg) ![icon](https://cdn-icons-png.flaticon.com/128/919/919851.png)
+![icon](https://cdn-icons-png.flaticon.com/128/174/174854.png) ![icon](https://cdn-icons-png.flaticon.com/128/732/732190.png) ![icon](https://cdn-icons-png.flaticon.com/128/5968/5968292.png) ![icon](https://cdn-icons-png.flaticon.com/128/919/919851.png)
 
 
 ## Getting Started with Create React App
