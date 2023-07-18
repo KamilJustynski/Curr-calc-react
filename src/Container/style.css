@@ -7,7 +7,7 @@
     border-radius: 50px;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
     .container {
         margin: 70px auto
     }
