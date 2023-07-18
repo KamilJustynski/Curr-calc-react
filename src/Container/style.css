@@ -1,8 +1,14 @@
 .container {
     max-width: 800px;
-    margin: 10% auto;
+    margin: 140px auto;
     padding: 20px;
     background-color: white;
     height: max-content;
     border-radius: 50px;
+}
+
+@media (max-width: 414px) {
+    .container {
+        margin: 70px auto
+    }
 }
