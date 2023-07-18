@@ -12,8 +12,8 @@ function App() {
       <Form>
         <Fieldset
           title="Przelicznik walut"
-          bodyLabelInput={<Label title="*Kwota w PLN:" body={<Input/>}/>}
-          bodyLabelSelect={<Label title="*Przelicz na:" body={<Select/>}/>}
+          bodyLabelInput={<Label title="*Kwota w PLN:" body={<Input />} />}
+          bodyLabelSelect={<Label title="*Przelicz na:" body={<Select />} />}
         />
         <Button title="Przelicz!" />
         <Button title="Reset!" />
