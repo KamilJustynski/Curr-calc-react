@@ -23,10 +23,8 @@
     font-size: 20px;
 }
 
-.form__paragraph--modifier{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.form__paragraph--modifier {
+    text-align: center;
 }
 
 .form__label {
