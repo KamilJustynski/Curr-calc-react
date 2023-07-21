@@ -57,9 +57,6 @@ const Form = ({ calculateResult, result }) => {
       <button type="submit" className="form__button">
         Przelicz!
       </button>
-      <button type="reset" className="form__button">
-        Reset!
-      </button>
     </form>
   );
 };
