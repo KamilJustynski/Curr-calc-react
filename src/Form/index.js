@@ -2,7 +2,15 @@ import "./style.css";
 import { currencies } from "../curriencies";
 import { useState } from "react";
 
-const Form = ({ calculateResult, result }) => {
+const Form = () => {
+  const [result, setResult] = useState();
+
+  const calculateResult = (currency, amount) => {
+    const rate = currencies.find(({ short }) => short === currency).rate;
+
+    setResult([(amount / rate).toFixed(2), currency]);
+  };
+
   const [currency, setCurrency] = useState(currencies[0].short);
   const [amount, setAmount] = useState("");
 
