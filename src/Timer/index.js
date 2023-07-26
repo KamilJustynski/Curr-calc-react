@@ -1,30 +1,10 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import { TimerContainer } from "./styled";
+import { useCurrentDate } from "../useCurrentDate";
 
 const Timer = () => {
-  const [time, setTime] = useState(new Date());
+  const {date , formattedTime} = useCurrentDate();
 
-  useEffect(() => {
-    const intervalID = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
-    return () => {
-      clearInterval(intervalID);
-    };
-  }, []);
-
-  const formattedTime = time.toLocaleString(undefined, {
-    weekday: "long",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    day: "numeric",
-    month: "long",
-  });
-
-  return <TimerContainer>Dzisiaj jest {formattedTime}</TimerContainer>;
+  return <TimerContainer>Dzisiaj jest {formattedTime(date)}</TimerContainer>;
 };
 
 export default Timer;
