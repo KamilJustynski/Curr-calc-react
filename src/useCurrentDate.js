@@ -23,5 +23,5 @@ export const useCurrentDate = () => {
       month: "long",
     });
 
-  return { time, useCurrentDate, formattedTime };
+  return { useCurrentDate, formattedTime };
 };
