@@ -1,4 +1,14 @@
-import "./style.css";
+import {
+  FormContainer,
+  FormFieldset,
+  FormLegend,
+  FormParagraph,
+  FormLabel,
+  FormSpan,
+  FormInput,
+  FormSelect,
+  FormButton,
+} from "./styled";
 import { currencies } from "../curriencies";
 import { useState } from "react";
 
@@ -20,29 +30,27 @@ const Form = () => {
   };
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">Przelicznik walut</legend>
-        <p className="form__paragraph">
-          <label className="form__label">
-            <span className="form__span">*Kwota w PLN:</span>
-            <input
+    <FormContainer onSubmit={onSubmit}>
+      <FormFieldset>
+        <FormLegend>Przelicznik walut</FormLegend>
+        <FormParagraph>
+          <FormLabel>
+            <FormSpan>*Kwota w PLN:</FormSpan>
+            <FormInput
               required
               value={amount}
               onChange={({ target }) => setAmount(target.value)}
               placeholder="Kwota w PLN"
-              className="form__input"
               type="number"
               step="0.01"
               min="0.01"
             />
-          </label>
-        </p>
-        <p className="form__paragraph">
-          <label className="form__label">
-            <span className="form__span">*Przelicz na:</span>
-            <select
-              className="form__input"
+          </FormLabel>
+        </FormParagraph>
+        <FormParagraph>
+          <FormLabel>
+            <FormSpan>*Przelicz na:</FormSpan>
+            <FormSelect
               value={currency}
               onChange={({ target }) => setCurrency(target.value)}
             >
@@ -51,21 +59,19 @@ const Form = () => {
                   {currency.name}
                 </option>
               ))}
-            </select>
-          </label>
-        </p>
-        <p className="form__paragraph form__paragraph--size">
+            </FormSelect>
+          </FormLabel>
+        </FormParagraph>
+        <FormParagraph size>
           Kwota po przeliczeniu:
           <strong> {result}</strong>
-        </p>
-      </fieldset>
-      <p className="form__paragraph--modifier">
+        </FormParagraph>
+      </FormFieldset>
+      <FormParagraph modifier>
         Tabela kursów średnich NBP nr 137/A/NBP/2023 z dnia 18-07-2023
-      </p>
-      <button type="submit" className="form__button">
-        Przelicz!
-      </button>
-    </form>
+      </FormParagraph>
+      <FormButton type="submit">Przelicz!</FormButton>
+    </FormContainer>
   );
 };
 

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import "./style.css";
+import { TimerContainer } from "./styled";
 
 const Timer = () => {
   const [time, setTime] = useState(new Date());
@@ -24,7 +24,7 @@ const Timer = () => {
     month: "long",
   });
 
-  return <div className="timer">Dzisiaj jest {formattedTime}</div>;
+  return <TimerContainer>Dzisiaj jest {formattedTime}</TimerContainer>;
 };
 
 export default Timer;
