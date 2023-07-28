@@ -10,11 +10,11 @@ export const FormFieldset = styled.fieldset`
 
 export const FormLegend = styled.legend`
   font-size: 30px;
-  border: 1px solid blue;
+  border: 1px solid ${({ theme }) => theme.color.blue};
   border-radius: 50px;
   padding: 10px;
-  color: white;
-  background-color: blue;
+  color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.color.blue};
   font-weight: bolder;
 `;
 
@@ -49,7 +49,7 @@ export const FormInput = styled.input`
   padding: 10px;
   max-width: 450px;
   width: 100%;
-  box-shadow: 2px 2px 10px 0px #adadad;
+  box-shadow: 2px 2px 10px 0px ${({ theme }) => theme.color.gray};
 `;
 
 export const FormSelect = styled.select`
@@ -57,7 +57,7 @@ export const FormSelect = styled.select`
   padding: 10px;
   max-width: 450px;
   width: 100%;
-  box-shadow: 2px 2px 10px 0px #adadad;
+  box-shadow: 2px 2px 10px 0px ${({ theme }) => theme.color.gray};
 `;
 
 export const FormButton = styled.button`
@@ -65,19 +65,19 @@ export const FormButton = styled.button`
   margin-top: 20px;
   padding: 10px;
   border-radius: 30px;
-  background-color: blue;
-  color: white;
+  background-color: ${({ theme }) => theme.color.blue};
+  color: ${({ theme }) => theme.color.white};
   font-weight: bolder;
   cursor: pointer;
   border: none;
   font-size: 20px;
 
   &:hover {
-    background-color: hsl(240, 100%, 60%);
+    background-color: ${({ theme }) => theme.color.mediumBlue};
     transition: 0.1s;
   }
 
   &:active {
-    background-color: hsl(240, 100%, 65%);
+    background-color: ${({ theme }) => theme.color.lightBlue};
   }
 `;
