@@ -9,7 +9,7 @@ import {
   FormSelect,
   FormButton,
 } from "./styled";
-import { useSetResults } from "../useSetResults";
+import { useSetResults } from "./useSetResults";
 
 const Form = () => {
   const {

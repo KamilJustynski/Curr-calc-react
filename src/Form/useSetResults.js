@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { currencies } from "./curriencies";
+import { currencies } from "../curriencies";
 
 
 export const useSetResults = () => {
