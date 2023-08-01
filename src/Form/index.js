@@ -9,25 +9,18 @@ import {
   FormSelect,
   FormButton,
 } from "./styled";
-import { currencies } from "../curriencies";
-import { useState } from "react";
+import { useSetResults } from "../useSetResults";
 
 const Form = () => {
-  const [result, setResult] = useState("");
-
-  const calculateResult = (currency, amount) => {
-    const rate = currencies.find(({ short }) => short === currency).rate;
-
-    setResult([(amount / rate).toFixed(2), currency]);
-  };
-
-  const [currency, setCurrency] = useState(currencies[0].short);
-  const [amount, setAmount] = useState("");
-
-  const onSubmit = (event) => {
-    event.preventDefault();
-    calculateResult(currency, amount);
-  };
+  const {
+    onSubmit,
+    currency,
+    currencies,
+    result,
+    amount,
+    setAmount,
+    setCurrency,
+  } = useSetResults();
 
   return (
     <FormContainer onSubmit={onSubmit}>
