@@ -5,6 +5,7 @@ export const theme = {
     mediumBlue: "hsl(240, 100%, 60%)",
     lightBlue: "hsl(240, 100%, 65%)",
     gray: "#adadad",
+    red: "#F31623"
   },
 
   breakpoint: {

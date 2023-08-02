@@ -5,6 +5,7 @@ export const Header = styled.header`
   border-radius: 50px;
   padding: 20px;
   font-weight: bolder;
+  color: ${({ theme }) => theme.color.blue};
 `;
 
 export const Content = styled.p`
