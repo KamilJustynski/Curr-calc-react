@@ -19,6 +19,8 @@ The currency calculator allows you to convert PLN currency into:
 - JavaScript
 - BEM
 - React
+- React hooks
+- Custom hooks
 
 ![icon](https://cdn-icons-png.flaticon.com/128/174/174854.png) ![icon](https://cdn-icons-png.flaticon.com/128/732/732190.png) ![icon](https://cdn-icons-png.flaticon.com/128/5968/5968292.png) ![icon](https://cdn-icons-png.flaticon.com/128/919/919851.png)
 
