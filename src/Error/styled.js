@@ -11,5 +11,5 @@ export const Header = styled.header`
 export const Content = styled.p`
   font-size: 20px;
   padding: 20px;
-  color: ${({theme}) => theme.color.red}
+  color: ${({ theme }) => theme.color.red};
 `;
