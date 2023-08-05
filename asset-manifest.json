@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/Curr-calc-react/static/js/main.39e45ea2.js",
+    "main.js": "/Curr-calc-react/static/js/main.ef9e3524.js",
     "static/js/787.0ba8fc16.chunk.js": "/Curr-calc-react/static/js/787.0ba8fc16.chunk.js",
     "index.html": "/Curr-calc-react/index.html",
-    "main.39e45ea2.js.map": "/Curr-calc-react/static/js/main.39e45ea2.js.map",
+    "main.ef9e3524.js.map": "/Curr-calc-react/static/js/main.ef9e3524.js.map",
     "787.0ba8fc16.chunk.js.map": "/Curr-calc-react/static/js/787.0ba8fc16.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.39e45ea2.js"
+    "static/js/main.ef9e3524.js"
   ]
 }
