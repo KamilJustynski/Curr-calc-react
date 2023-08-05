@@ -22,9 +22,9 @@ const Form = () => {
 
   return (
     <FormContainer onSubmit={onSubmit}>
-      {ratesData.state === "loading" ? (
+      {ratesData.status === "loading" ? (
         <Loading />
-      ) : ratesData.state === "error" ? (
+      ) : ratesData.status === "error" ? (
         <Error />
       ) : (
         <>

@@ -1,27 +1,27 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const linkURL = "https://api.exchangerate.host/latest?base=PLN";
+
 export const useCurrencyRates = () => {
   const [ratesData, setRatesData] = useState({
-    state: "loading",
+    status: "loading",
   });
 
   useEffect(() => {
     const fetchRates = async () => {
       try {
-        const response = await axios.get(
-          "https://api.exchangerate.host/latest?base=PLN"
-        );
+        const response = await axios.get(linkURL);
 
         const { rates, date } = await response.data;
         setRatesData({
-          state: "succes",
+          status: "succes",
           rates,
           date,
         });
       } catch {
         setRatesData({
-          state: "error",
+          status: "error",
         });
       }
     };
