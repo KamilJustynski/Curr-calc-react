@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 
-export const FormContainer = styled.form``;
+export const FormContainer = styled.form`
+  height: 580px;
+`;
 
 export const FormFieldset = styled.fieldset`
   border-radius: 30px;
