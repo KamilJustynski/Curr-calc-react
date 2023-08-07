@@ -6,7 +6,7 @@ export const Error = () => {
     <FormContainer>
       <Header>Przelicznik walut</Header>
       <Content>
-        Przepraszamy... <br></br>Coś poszło nie tak, prosze sprawdzić dane!
+        Przepraszamy... <br></br>Coś poszło nie tak, sprawdź połączenie internetowe!
       </Content>
     </FormContainer>
   );
