@@ -13,11 +13,15 @@ export const useCurrencyRates = () => {
       try {
         const response = await axios.get(linkURL);
 
-        const { rates, date } = await response.data;
+        if (!response.ok) {
+          throw new Error(response.statusText);
+        }
+
+        const { data } = await response.json();
+
         setRatesData({
-          status: "succes",
-          rates,
-          date,
+          status: "success",
+          data,
         });
       } catch {
         setRatesData({

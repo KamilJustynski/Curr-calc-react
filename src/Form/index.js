@@ -51,7 +51,7 @@ const Form = () => {
                   value={currency}
                   onChange={({ target }) => setCurrency(target.value)}
                 >
-                  {Object.keys(ratesData.rates).map((currency) => (
+                  {Object.keys(ratesData.data).map((currency) => (
                     <option key={currency} value={currency}>
                       {currency}
                     </option>
@@ -65,7 +65,7 @@ const Form = () => {
             </FormParagraph>
           </FormFieldset>
           <FormParagraph modifier>
-            Tabela kursów średnich NBP nr 137/A/NBP/2023 z dnia {ratesData.date}
+            Tabela kursów średnich NBP nr 137/A/NBP/2023 z dnia {ratesData.data}
           </FormParagraph>
           <FormButton type="submit">Przelicz!</FormButton>
         </>
