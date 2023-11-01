@@ -10,7 +10,7 @@ The currency calculator allows you to convert PLN currency into:
 
 ## Demo
 
-[Currency Calculator](https://r0galkj.github.io/Curr-calc-react/)
+[Currency Calculator](https://kamiljustynski.github.io/Curr-calc-react/)
 
 ## Technology
 
