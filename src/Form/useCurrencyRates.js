@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const linkURL = "https://api.exchangerate.host/latest?base=PLN";
+const linkURL = `https://api.currencyapi.com/v3/latest?apikey=cur_live_pgBMEW0JweWFXhSgbtjLzqxuF8DZVOfY6TfEZN4S`;
 
 export const useCurrencyRates = () => {
   const [ratesData, setRatesData] = useState({
