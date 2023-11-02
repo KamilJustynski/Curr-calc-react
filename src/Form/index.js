@@ -65,7 +65,7 @@ const Form = () => {
             </FormParagraph>
           </FormFieldset>
           <FormParagraph modifier>
-            Tabela kursów średnich NBP nr 137/A/NBP/2023 z dnia {ratesData.data}
+            Tabela kursów średnich NBP nr 137/A/NBP/2023 z dnia 2023.11.02
           </FormParagraph>
           <FormButton type="submit">Przelicz!</FormButton>
         </>

@@ -4,15 +4,18 @@ import { useCurrencyRates } from "./useCurrencyRates";
 export const useSetResults = () => {
   const [result, setResult] = useState(null);
   const ratesData = useCurrencyRates();
+  const [currency, setCurrency] = useState("EUR");
+  const [amount, setAmount] = useState("");
 
   const calculateResult = (currency, amount) => {
     const rate = ratesData.data[currency].value;
 
-    setResult([(amount / rate).toFixed(2), currency]);
+    setResult({
+      sourceAmount: +amount,
+      targetAmount: amount * rate,
+      currency,
+    });
   };
-
-  const [currency, setCurrency] = useState("EUR");
-  const [amount, setAmount] = useState("");
 
   const onSubmit = (event) => {
     event.preventDefault();
